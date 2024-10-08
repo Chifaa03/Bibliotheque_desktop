@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="391.0" prefWidth="550.0" style="-fx-background-color: #FFDAB9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AjoutLecteurController">
+
+    <Label layoutX="111.0" layoutY="29.0" style="-fx-font-size: 40; -fx-font-weight: bold; -fx-text-fill: white;" text="Ajout d'un Lecteur" />
+    
+    <TextField fx:id="cinField" layoutX="130.0" layoutY="129.0" prefHeight="25.0" prefWidth="275.0" promptText="Saisir le CIN" style="-fx-background-color: white;" />
+    <TextField fx:id="nomField" layoutX="131.0" layoutY="176.0" prefHeight="25.0" prefWidth="275.0" promptText="Saisir le nom" style="-fx-background-color: white;" />
+    <TextField fx:id="prenomField" layoutX="131.0" layoutY="225.0" prefHeight="25.0" prefWidth="275.0" promptText="Saisir le prénom" style="-fx-background-color: white;" />
+    
+    <TextField fx:id="fraisField" layoutX="130.0" layoutY="280.0" prefHeight="25.0" prefWidth="275.0" promptText="Saisir les frais" style="-fx-background-color: white;" />
+    <TextField fx:id="idAboField" layoutX="130.0" layoutY="329.0" prefHeight="25.0" prefWidth="275.0" promptText="Saisir l'ID Abonnement" style="-fx-background-color: white;" />
+
+    <Button fx:id="ajoutLecteur" layoutX="182.0" layoutY="388.0" onAction="#ajouterLecteurClicked" prefHeight="58.0" prefWidth="159.0" style="-fx-font-size: 14; -fx-background-color: white; -fx-text-fill: #FFDAB9;" text="Ajouter Lecteur" />
+
+    <HBox spacing="10" />
+
+    <HBox spacing="10" />
+
+    <HBox spacing="10" />
+   <Button fx:id="precButton" onAction="#precClicked" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" text="Page Précédente" />
+
+</AnchorPane>
